@@ -1,27 +1,41 @@
-import org.openqa.selenium.firefox.FirefoxOptions;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Test;
-import static org.testng.Assert.*;
-
-import java.util.concurrent.TimeUnit;
-import java.util.Date;
-import java.io.File;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.*;
-import static org.openqa.selenium.OutputType.*;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.BrowserType;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import java.util.Objects;
+import java.util.concurrent.TimeUnit;
 
 public class AdminTest {
-    FirefoxDriver wd;
-    
+    WebDriver wd;
+
+    String browser = BrowserType.CHROME;
+
     @BeforeMethod
     public void setUp() throws Exception {
-        wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true).setBinary("C:/Program Files/Mozilla Firefox/firefox.exe"));
-        wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+
+        if (Objects.equals(browser, BrowserType.FIREFOX)) {
+
+            wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true).setBinary("C:/Program Files/Mozilla Firefox/firefox.exe"));
+
+        } else if (Objects.equals(browser, BrowserType.CHROME)) {
+
+            wd = new ChromeDriver();
+
+        } else if (Objects.equals(browser, BrowserType.IE)) {
+
+            wd = new InternetExplorerDriver();
+        }
     }
-    
+
+
     @Test
     public void AdminTest() {
         wd.get("http://localhost:8080/litecart/admin/login.php?redirect_url=%2Flitecart%2Fadmin%2F");
@@ -33,13 +47,13 @@ public class AdminTest {
         wd.findElement(By.name("password")).sendKeys("admin");
         wd.findElement(By.name("login")).click();
     }
-    
+
     @AfterMethod
-    public void tearDown() {
+    public void stop() {
         wd.quit();
     }
     
-    public static boolean isAlertPresent(FirefoxDriver wd) {
+    public static boolean isAlertPresent(WebDriver wd) {
         try {
             wd.switchTo().alert();
             return true;

@@ -49,9 +49,23 @@
       <file leaf-file-name="AdminTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/AdminTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="20" column="127" selection-start-line="20" selection-start-column="127" selection-end-line="20" selection-end-column="127" />
-              <folding />
+            <state relative-caret-position="277">
+              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BrowserType.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-remote-driver/3.11.0/27548ec14b525fcf3b6c2ac01c8d1ce11564ebb2/selenium-remote-driver-3.11.0-sources.jar!/org/openqa/selenium/remote/BrowserType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="17" column="34" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#1668#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -986,18 +1000,39 @@
     <history-entry file="AdminTest - 2018.03.21 at 21h 58m 52s.xml">
       <configuration name="AdminTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="AdminTest - 2018.03.21 at 22h 43m 48s.xml">
+      <configuration name="AdminTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AdminTest - 2018.03.21 at 22h 53m 36s.xml">
+      <configuration name="AdminTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AdminTest - 2018.03.21 at 22h 54m 06s.xml">
+      <configuration name="AdminTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AdminTest - 2018.03.21 at 22h 55m 21s.xml">
+      <configuration name="AdminTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AdminTest - 2018.03.21 at 22h 57m 51s.xml">
+      <configuration name="AdminTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AdminTest - 2018.03.21 at 22h 59m 37s.xml">
+      <configuration name="AdminTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AdminTest - 2018.03.21 at 23h 00m 22s.xml">
+      <configuration name="AdminTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AdminTest - 2018.03.21 at 23h 00m 56s.xml">
+      <configuration name="AdminTest" configurationId="TestNG" />
+    </history-entry>
     <history-entry file="FirstTest - 2018.03.21 at 20h 22m 32s.xml">
       <configuration name="FirstTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MyFirstTest - 2018.03.21 at 20h 05m 27s.xml">
-      <configuration name="MyFirstTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="711000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1554" height="916" extended-state="6" />
+    <frame x="-8" y="-8" width="1554" height="916" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1012,7 +1047,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25301206" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25301206" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1087,11 +1122,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-remote-driver/3.11.0/27548ec14b525fcf3b6c2ac01c8d1ce11564ebb2/selenium-remote-driver-3.11.0-sources.jar!/org/openqa/selenium/remote/BrowserType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#1668#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AdminTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="20" column="127" selection-start-line="20" selection-start-column="127" selection-end-line="20" selection-end-column="127" />
-          <folding />
+        <state relative-caret-position="277">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
