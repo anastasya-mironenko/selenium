@@ -1,3 +1,5 @@
+package tests;
+
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
@@ -14,7 +16,7 @@ import org.openqa.selenium.*;
 import static org.openqa.selenium.OutputType.*;
 
 public class FirstTest {
-    FirefoxDriver wd;
+    /*FirefoxDriver wd;
     
     @BeforeMethod
     public void setUp() throws Exception {
@@ -45,4 +47,5 @@ public class FirstTest {
             return false;
         }
     }
+    */
 }

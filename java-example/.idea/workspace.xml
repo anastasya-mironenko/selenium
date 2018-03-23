@@ -12,11 +12,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -33,12 +31,51 @@
     <favorites_list name="java-example" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="AdminTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/AdminTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApplicationManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/appmanager/ApplicationManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-153">
+              <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1141#1142#0" expanded="true" />
+                <element signature="e#1166#1167#0" expanded="true" />
+                <element signature="e#1208#1209#0" expanded="true" />
+                <element signature="e#1242#1243#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="FirstTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/FirstTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="20" column="127" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="127" />
+            <state relative-caret-position="368">
+              <caret line="49" column="6" lean-forward="false" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
+              <folding>
+                <marker date="1521793624921" expanded="false" signature="1268:1279" ph=" { " />
+                <marker date="1521793624921" expanded="false" signature="1289:1295" ph=" }" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelperAdmin.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/appmanager/HelperAdmin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,25 +83,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/AdminTest.java">
+      <file leaf-file-name="HelperBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/appmanager/HelperBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+            <state relative-caret-position="218">
+              <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#301#302#0" expanded="true" />
+                <element signature="e#348#349#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BrowserType.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-remote-driver/3.11.0/27548ec14b525fcf3b6c2ac01c8d1ce11564ebb2/selenium-remote-driver-3.11.0-sources.jar!/org/openqa/selenium/remote/BrowserType.java">
+      <file leaf-file-name="TestBase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="17" column="34" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="34" />
+            <state relative-caret-position="153">
+              <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
               <folding>
-                <element signature="e#0#1668#0" expanded="false" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#436#437#0" expanded="true" />
+                <element signature="e#462#463#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,6 +121,16 @@
     </option>
   </component>
   <component name="GradleLocalSettings">
+    <option name="myGradleHomes">
+      <map>
+        <entry key="$PROJECT_DIR$" value="C:\gradle\gradle-4.0.2" />
+      </map>
+    </option>
+    <option name="myGradleVersions">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4.0.2" />
+      </map>
+    </option>
     <option name="availableProjects">
       <map>
         <entry>
@@ -277,7 +328,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="1521651673102" />
+        <entry key="$PROJECT_DIR$" value="1521701681336" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -299,151 +350,138 @@
               <option name="name" value="java-example" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="C:/Gradle/gradle-4.6/src/announce" />
-                  <option value="C:/Gradle/gradle-4.6/src/antlr" />
-                  <option value="C:/Gradle/gradle-4.6/src/base-services" />
-                  <option value="C:/Gradle/gradle-4.6/src/base-services-groovy" />
-                  <option value="C:/Gradle/gradle-4.6/src/build-cache" />
-                  <option value="C:/Gradle/gradle-4.6/src/build-cache-http" />
-                  <option value="C:/Gradle/gradle-4.6/src/build-comparison" />
-                  <option value="C:/Gradle/gradle-4.6/src/build-init" />
-                  <option value="C:/Gradle/gradle-4.6/src/build-option" />
-                  <option value="C:/Gradle/gradle-4.6/src/cli" />
-                  <option value="C:/Gradle/gradle-4.6/src/code-quality" />
-                  <option value="C:/Gradle/gradle-4.6/src/composite-builds" />
-                  <option value="C:/Gradle/gradle-4.6/src/core" />
-                  <option value="C:/Gradle/gradle-4.6/src/core-api" />
-                  <option value="C:/Gradle/gradle-4.6/src/dependency-management" />
-                  <option value="C:/Gradle/gradle-4.6/src/diagnostics" />
-                  <option value="C:/Gradle/gradle-4.6/src/ear" />
-                  <option value="C:/Gradle/gradle-4.6/src/ide" />
-                  <option value="C:/Gradle/gradle-4.6/src/ide-native" />
-                  <option value="C:/Gradle/gradle-4.6/src/ide-play" />
-                  <option value="C:/Gradle/gradle-4.6/src/installation-beacon" />
-                  <option value="C:/Gradle/gradle-4.6/src/internal-android-performance-testing" />
-                  <option value="C:/Gradle/gradle-4.6/src/internal-integ-testing" />
-                  <option value="C:/Gradle/gradle-4.6/src/internal-performance-testing" />
-                  <option value="C:/Gradle/gradle-4.6/src/internal-testing" />
-                  <option value="C:/Gradle/gradle-4.6/src/ivy" />
-                  <option value="C:/Gradle/gradle-4.6/src/jacoco" />
-                  <option value="C:/Gradle/gradle-4.6/src/javascript" />
-                  <option value="C:/Gradle/gradle-4.6/src/jvm-services" />
-                  <option value="C:/Gradle/gradle-4.6/src/language-groovy" />
-                  <option value="C:/Gradle/gradle-4.6/src/language-java" />
-                  <option value="C:/Gradle/gradle-4.6/src/language-jvm" />
-                  <option value="C:/Gradle/gradle-4.6/src/language-native" />
-                  <option value="C:/Gradle/gradle-4.6/src/language-scala" />
-                  <option value="C:/Gradle/gradle-4.6/src/launcher" />
-                  <option value="C:/Gradle/gradle-4.6/src/logging" />
-                  <option value="C:/Gradle/gradle-4.6/src/maven" />
-                  <option value="C:/Gradle/gradle-4.6/src/messaging" />
-                  <option value="C:/Gradle/gradle-4.6/src/model-core" />
-                  <option value="C:/Gradle/gradle-4.6/src/model-groovy" />
-                  <option value="C:/Gradle/gradle-4.6/src/native" />
-                  <option value="C:/Gradle/gradle-4.6/src/osgi" />
-                  <option value="C:/Gradle/gradle-4.6/src/persistent-cache" />
-                  <option value="C:/Gradle/gradle-4.6/src/platform-base" />
-                  <option value="C:/Gradle/gradle-4.6/src/platform-jvm" />
-                  <option value="C:/Gradle/gradle-4.6/src/platform-native" />
-                  <option value="C:/Gradle/gradle-4.6/src/platform-play" />
-                  <option value="C:/Gradle/gradle-4.6/src/plugin-development" />
-                  <option value="C:/Gradle/gradle-4.6/src/plugin-use" />
-                  <option value="C:/Gradle/gradle-4.6/src/plugins" />
-                  <option value="C:/Gradle/gradle-4.6/src/process-services" />
-                  <option value="C:/Gradle/gradle-4.6/src/publish" />
-                  <option value="C:/Gradle/gradle-4.6/src/reporting" />
-                  <option value="C:/Gradle/gradle-4.6/src/resources" />
-                  <option value="C:/Gradle/gradle-4.6/src/resources-gcs" />
-                  <option value="C:/Gradle/gradle-4.6/src/resources-http" />
-                  <option value="C:/Gradle/gradle-4.6/src/resources-s3" />
-                  <option value="C:/Gradle/gradle-4.6/src/resources-sftp" />
-                  <option value="C:/Gradle/gradle-4.6/src/scala" />
-                  <option value="C:/Gradle/gradle-4.6/src/signing" />
-                  <option value="C:/Gradle/gradle-4.6/src/test-kit" />
-                  <option value="C:/Gradle/gradle-4.6/src/testing-base" />
-                  <option value="C:/Gradle/gradle-4.6/src/testing-junit-platform" />
-                  <option value="C:/Gradle/gradle-4.6/src/testing-jvm" />
-                  <option value="C:/Gradle/gradle-4.6/src/testing-native" />
-                  <option value="C:/Gradle/gradle-4.6/src/tooling-api" />
-                  <option value="C:/Gradle/gradle-4.6/src/tooling-api-builders" />
-                  <option value="C:/Gradle/gradle-4.6/src/version-control" />
-                  <option value="C:/Gradle/gradle-4.6/src/workers" />
-                  <option value="C:/Gradle/gradle-4.6/src/wrapper" />
-                  <option value="C:/Gradle/gradle-4.6/lib/ant-1.9.9.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/ant-launcher-1.9.9.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-base-services-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-base-services-groovy-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-build-cache-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-build-option-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-cli-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-core-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-core-api-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-docs-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-installation-beacon-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-jvm-services-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-kotlin-dsl-0.15.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-kotlin-dsl-tooling-builders-0.15.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-kotlin-dsl-tooling-models-0.15.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-launcher-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-logging-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-messaging-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-model-core-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-model-groovy-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-native-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-persistent-cache-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-process-services-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-resources-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-runtime-api-info-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-tooling-api-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/gradle-wrapper-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/groovy-all-2.4.12.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-announce-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-antlr-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-build-cache-http-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-build-comparison-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-build-init-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-code-quality-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-composite-builds-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-dependency-management-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-diagnostics-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-ear-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-ide-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-ide-native-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-ide-play-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-ivy-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-jacoco-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-javascript-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-language-groovy-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-language-java-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-language-jvm-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-language-native-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-language-scala-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-maven-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-osgi-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-platform-base-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-platform-jvm-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-platform-native-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-platform-play-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-plugin-development-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-plugin-use-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-plugins-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-publish-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-reporting-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-resources-gcs-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-resources-http-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-resources-s3-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-resources-sftp-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-scala-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-signing-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-test-kit-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-testing-base-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-testing-junit-platform-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-testing-jvm-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-testing-native-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-tooling-api-builders-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-version-control-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/gradle-workers-4.6.jar" />
-                  <option value="C:/Gradle/gradle-4.6/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/src/announce" />
+                  <option value="C:/gradle/gradle-4.0.2/src/antlr" />
+                  <option value="C:/gradle/gradle-4.0.2/src/base-services" />
+                  <option value="C:/gradle/gradle-4.0.2/src/base-services-groovy" />
+                  <option value="C:/gradle/gradle-4.0.2/src/build-cache-http" />
+                  <option value="C:/gradle/gradle-4.0.2/src/build-comparison" />
+                  <option value="C:/gradle/gradle-4.0.2/src/build-init" />
+                  <option value="C:/gradle/gradle-4.0.2/src/cli" />
+                  <option value="C:/gradle/gradle-4.0.2/src/code-quality" />
+                  <option value="C:/gradle/gradle-4.0.2/src/composite-builds" />
+                  <option value="C:/gradle/gradle-4.0.2/src/core" />
+                  <option value="C:/gradle/gradle-4.0.2/src/dependency-management" />
+                  <option value="C:/gradle/gradle-4.0.2/src/diagnostics" />
+                  <option value="C:/gradle/gradle-4.0.2/src/ear" />
+                  <option value="C:/gradle/gradle-4.0.2/src/ide" />
+                  <option value="C:/gradle/gradle-4.0.2/src/ide-native" />
+                  <option value="C:/gradle/gradle-4.0.2/src/ide-play" />
+                  <option value="C:/gradle/gradle-4.0.2/src/installation-beacon" />
+                  <option value="C:/gradle/gradle-4.0.2/src/internal-android-performance-testing" />
+                  <option value="C:/gradle/gradle-4.0.2/src/internal-integ-testing" />
+                  <option value="C:/gradle/gradle-4.0.2/src/internal-performance-testing" />
+                  <option value="C:/gradle/gradle-4.0.2/src/internal-testing" />
+                  <option value="C:/gradle/gradle-4.0.2/src/ivy" />
+                  <option value="C:/gradle/gradle-4.0.2/src/jacoco" />
+                  <option value="C:/gradle/gradle-4.0.2/src/javascript" />
+                  <option value="C:/gradle/gradle-4.0.2/src/jvm-services" />
+                  <option value="C:/gradle/gradle-4.0.2/src/language-groovy" />
+                  <option value="C:/gradle/gradle-4.0.2/src/language-java" />
+                  <option value="C:/gradle/gradle-4.0.2/src/language-jvm" />
+                  <option value="C:/gradle/gradle-4.0.2/src/language-native" />
+                  <option value="C:/gradle/gradle-4.0.2/src/language-scala" />
+                  <option value="C:/gradle/gradle-4.0.2/src/launcher" />
+                  <option value="C:/gradle/gradle-4.0.2/src/logging" />
+                  <option value="C:/gradle/gradle-4.0.2/src/maven" />
+                  <option value="C:/gradle/gradle-4.0.2/src/messaging" />
+                  <option value="C:/gradle/gradle-4.0.2/src/model-core" />
+                  <option value="C:/gradle/gradle-4.0.2/src/model-groovy" />
+                  <option value="C:/gradle/gradle-4.0.2/src/native" />
+                  <option value="C:/gradle/gradle-4.0.2/src/osgi" />
+                  <option value="C:/gradle/gradle-4.0.2/src/platform-base" />
+                  <option value="C:/gradle/gradle-4.0.2/src/platform-jvm" />
+                  <option value="C:/gradle/gradle-4.0.2/src/platform-native" />
+                  <option value="C:/gradle/gradle-4.0.2/src/platform-play" />
+                  <option value="C:/gradle/gradle-4.0.2/src/plugin-development" />
+                  <option value="C:/gradle/gradle-4.0.2/src/plugin-use" />
+                  <option value="C:/gradle/gradle-4.0.2/src/plugins" />
+                  <option value="C:/gradle/gradle-4.0.2/src/process-services" />
+                  <option value="C:/gradle/gradle-4.0.2/src/publish" />
+                  <option value="C:/gradle/gradle-4.0.2/src/reporting" />
+                  <option value="C:/gradle/gradle-4.0.2/src/resources" />
+                  <option value="C:/gradle/gradle-4.0.2/src/resources-http" />
+                  <option value="C:/gradle/gradle-4.0.2/src/resources-s3" />
+                  <option value="C:/gradle/gradle-4.0.2/src/resources-sftp" />
+                  <option value="C:/gradle/gradle-4.0.2/src/scala" />
+                  <option value="C:/gradle/gradle-4.0.2/src/signing" />
+                  <option value="C:/gradle/gradle-4.0.2/src/test-kit" />
+                  <option value="C:/gradle/gradle-4.0.2/src/testing-base" />
+                  <option value="C:/gradle/gradle-4.0.2/src/testing-jvm" />
+                  <option value="C:/gradle/gradle-4.0.2/src/testing-native" />
+                  <option value="C:/gradle/gradle-4.0.2/src/tooling-api" />
+                  <option value="C:/gradle/gradle-4.0.2/src/tooling-api-builders" />
+                  <option value="C:/gradle/gradle-4.0.2/src/workers" />
+                  <option value="C:/gradle/gradle-4.0.2/src/wrapper" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/ant-1.9.6.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/ant-launcher-1.9.6.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-base-services-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-base-services-groovy-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-cli-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-core-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-docs-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-installation-beacon-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-jvm-services-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-launcher-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-logging-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-messaging-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-model-core-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-model-groovy-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-native-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-process-services-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-resources-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-runtime-api-info-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-script-kotlin-0.9.0.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-script-kotlin-compiler-plugin-0.9.0.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-script-kotlin-tooling-builders-0.9.0.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-script-kotlin-tooling-models-0.9.0.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-tooling-api-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/gradle-wrapper-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/groovy-all-2.4.11.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-announce-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-antlr-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-build-cache-http-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-build-comparison-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-build-init-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-code-quality-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-composite-builds-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-dependency-management-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-diagnostics-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-ear-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-ide-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-ide-native-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-ide-play-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-ivy-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-jacoco-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-javascript-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-language-groovy-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-language-java-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-language-jvm-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-language-native-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-language-scala-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-maven-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-osgi-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-platform-base-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-platform-jvm-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-platform-native-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-platform-play-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-plugin-development-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-plugin-use-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-plugins-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-publish-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-reporting-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-resources-http-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-resources-s3-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-resources-sftp-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-scala-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-signing-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-test-kit-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-testing-base-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-testing-jvm-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-testing-native-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-tooling-api-builders-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/gradle-workers-4.0.2.jar" />
+                  <option value="C:/gradle/gradle-4.0.2/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -466,6 +504,13 @@
         <option value="$PROJECT_DIR$/src/test/java/MyFirstTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/FirstTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/AdminTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/FirstTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/appmanager/SessionHelper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/appmanager/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/appmanager/HelperBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/AdminTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/appmanager/HelperAdmin.java" />
       </list>
     </option>
   </component>
@@ -475,28 +520,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1554" />
+    <option name="x" value="1921" />
+    <option name="width" value="1374" />
     <option name="height" value="916" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -513,116 +540,61 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java-example" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="java-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-example" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-example" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-example" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-example" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-example" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="appmanager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java-example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java-example" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -640,7 +612,61 @@
     </option>
   </component>
   <component name="RunManager" selected="TestNG.AdminTest">
-    <configuration default="false" name="MyFirstProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="AdminTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="java-example_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="tests.AdminTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="FirstTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="java-example_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="tests.FirstTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="MyFirstProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="MyFirstProgram" />
       <option name="VM_PARAMETERS" />
@@ -653,9 +679,8 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="java-example_main" />
       <envs />
-      <method />
     </configuration>
-    <configuration default="false" name="MyFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyFirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="java-example_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -674,70 +699,98 @@
       </option>
       <envs />
       <patterns />
-      <method />
     </configuration>
-    <configuration default="false" name="FirstTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="java-example_test" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <envs />
-      <properties />
-      <listeners />
-      <method />
+      <patterns />
     </configuration>
-    <configuration default="false" name="AdminTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="java-example_test" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="AdminTest" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
+      <module name="java-example_main" />
       <envs />
-      <properties />
-      <listeners />
-      <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
-      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
@@ -776,28 +829,6 @@
       <option name="PREFERRED_AVD" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -812,27 +843,6 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
@@ -877,19 +887,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="java-example_main" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="filePath" />
@@ -900,42 +897,6 @@
       <option name="workingDirectory" />
       <option name="isAlternativeJrePathEnabled" value="false" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
       <method />
     </configuration>
     <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
@@ -993,25 +954,11 @@
       <updated>1521643512843</updated>
       <workItem from="1521643516252" duration="613000" />
       <workItem from="1521644171734" duration="98000" />
+      <workItem from="1521702850355" duration="6591000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AdminTest - 2018.03.21 at 21h 58m 52s.xml">
-      <configuration name="AdminTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AdminTest - 2018.03.21 at 22h 43m 48s.xml">
-      <configuration name="AdminTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AdminTest - 2018.03.21 at 22h 53m 36s.xml">
-      <configuration name="AdminTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AdminTest - 2018.03.21 at 22h 54m 06s.xml">
-      <configuration name="AdminTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="AdminTest - 2018.03.21 at 22h 55m 21s.xml">
-      <configuration name="AdminTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="AdminTest - 2018.03.21 at 22h 57m 51s.xml">
       <configuration name="AdminTest" configurationId="TestNG" />
     </history-entry>
@@ -1024,45 +971,59 @@
     <history-entry file="AdminTest - 2018.03.21 at 23h 00m 56s.xml">
       <configuration name="AdminTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="AdminTest - 2018.03.22 at 10h 14m 55s.xml">
+      <configuration name="AdminTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AdminTest - 2018.03.22 at 10h 15m 35s.xml">
+      <configuration name="AdminTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AdminTest - 2018.03.23 at 14h 00m 58s.xml">
+      <configuration name="AdminTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AdminTest - 2018.03.23 at 14h 01m 17s.xml">
+      <configuration name="AdminTest" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="AdminTest - 2018.03.23 at 14h 04m 28s.xml">
+      <configuration name="AdminTest" configurationId="TestNG" />
+    </history-entry>
     <history-entry file="FirstTest - 2018.03.21 at 20h 22m 32s.xml">
       <configuration name="FirstTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="711000" />
+    <option name="totallyTimeSpent" value="7302000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1554" height="916" extended-state="7" />
-    <editor active="true" />
+    <frame x="1921" y="0" width="1374" height="916" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32822478" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25301206" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2914764" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1080,62 +1041,102 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-remote-driver/3.11.0/27548ec14b525fcf3b6c2ac01c8d1ce11564ebb2/selenium-remote-driver-3.11.0-sources.jar!/org/openqa/selenium/remote/BrowserType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/MyFirstTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GroupCreationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="127" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="127" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/FirstTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="20" column="127" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="127" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestBase.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/MyFirstTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/GroupCreationTests.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-remote-driver/3.11.0/27548ec14b525fcf3b6c2ac01c8d1ce11564ebb2/selenium-remote-driver-3.11.0-sources.jar!/org/openqa/selenium/remote/BrowserType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="17" column="34" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="34" />
+        <state relative-caret-position="-17">
+          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/FirstTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="49" column="6" lean-forward="false" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
           <folding>
-            <element signature="e#0#1668#0" expanded="false" />
+            <marker date="1521793624921" expanded="false" signature="1268:1279" ph=" { " />
+            <marker date="1521793624921" expanded="false" signature="1289:1295" ph=" }" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AdminTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/appmanager/SessionHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        <state relative-caret-position="272">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+            <element signature="e#1166#1167#0" expanded="true" />
+            <element signature="e#1208#1209#0" expanded="true" />
+            <element signature="e#1242#1243#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/appmanager/HelperBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/AdminTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/appmanager/HelperAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
