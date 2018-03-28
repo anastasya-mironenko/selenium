@@ -4,13 +4,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.util.List;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
 public class HelperAdmin extends HelperBase {
-   int menuCol, submenuCol;
+    int menuCol, submenuCol;
+    int prodCol, stickerCol;
+    WebElement prodUnit;
+    List<WebElement> prodList, stickerList;
 
     public HelperAdmin(WebDriver wd){
         super(wd);
@@ -62,6 +66,28 @@ public class HelperAdmin extends HelperBase {
                 wd.findElement(By.cssSelector("h1")); //проверка наличия заголовка
             }
 
+        }
+    }
+
+    public void goToSite(){
+        wd.get("http://localhost:8080/litecart/en/");
+    }
+
+    public void CheckStiker(){
+
+        wait = new WebDriverWait(wd,10);
+
+        prodList = wd.findElements(By.id("li.product"));
+        prodCol = prodList.size();
+
+        for (int i = 0; i < prodCol; i++) {
+
+            prodList = wd.findElements(By.id("li.product"));
+            prodUnit = prodList.get(i);
+
+            stickerList = wd.findElements(By.cssSelector("li.product .sticker"));
+            stickerCol = stickerList.size();
+            Assert.assertTrue(stickerCol == 1);
         }
     }
 
