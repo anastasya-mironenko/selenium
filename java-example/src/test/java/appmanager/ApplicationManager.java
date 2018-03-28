@@ -6,6 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.Objects;
 
@@ -38,6 +39,8 @@ public class ApplicationManager {
         //wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
         helperAdmin = new HelperAdmin(wd);
+
+
     }
 
     public void stop() {
