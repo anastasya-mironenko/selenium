@@ -16,6 +16,13 @@ public class HelperAdmin extends HelperBase {
     WebElement prodUnit;
     List<WebElement> prodList, stickerList;
 
+    int countryCol, zoneCol, geoZoneCol; // количество стран в списке, зон в списке
+    int[] zones;  // массив количества зон для списка стран
+    int a, az;
+    WebElement countryRow, zoneRow, geoZoneRow;  // строка по стране и по зоне
+    List<WebElement> countryRows, zoneRows, geoZoneRows;  // список стран, список зон
+    String[] countryName, zoneName;  // имена стран, имена зон
+
     public HelperAdmin(WebDriver wd){
         super(wd);
     }
@@ -88,6 +95,85 @@ public class HelperAdmin extends HelperBase {
             stickerList = wd.findElements(By.cssSelector("li.product .sticker"));
             stickerCol = stickerList.size();
             Assert.assertTrue(stickerCol == 1);
+        }
+    }
+
+    public static int Alphabet (String[] testArr, int arrSize) {
+        int isAlphab=1;
+        for (int i=1; i<arrSize;i++) {
+            int k;
+            k=testArr[i-1].compareToIgnoreCase(testArr[i]);
+            if(k>=0) isAlphab=-1;
+        }
+        return isAlphab;
+    }
+
+    public void CheckCountries() {
+
+        wd.get("http://localhost:8080/litecart/admin/?app=countries&doc=countries");
+
+        countryRows = wd.findElements(By.cssSelector("[name=countries_form] .row"));
+
+        countryCol = countryRows.size();
+        countryName = new String[countryCol];
+        zones = new int[countryCol];
+
+        for (int i = 0; i< countryCol; i++) {
+            countryRow = countryRows.get(i);
+            countryName[i] = countryRow.findElement(By.cssSelector("a")).getText();
+            zones[i]=Integer.parseInt(countryRow.findElement(By.cssSelector("td:nth-child(6)")).getText());
+        }
+
+        a = Alphabet(countryName, countryCol);
+
+        Assert.assertTrue(a==1);
+
+        for (int i = 0; i< countryCol; i++) {
+            if (zones[i]>0) {
+                countryRows = wd.findElements(By.cssSelector("[name=countries_form] .row"));
+                countryRow=countryRows.get(i);
+                countryRow.findElement(By.cssSelector("a")).click();
+                wait = new WebDriverWait(wd,10);
+
+                zoneRows = wd.findElements(By.cssSelector("[id=table-zones] tr"));
+                zoneCol = zoneRows.size() - 2;
+                zoneName = new String[zoneCol];
+
+                for (int j = 1; j<= zoneCol; j++) {
+                    zoneRow = zoneRows.get(j);
+                    zoneName[j-1]=zoneRow.findElement(By.cssSelector("td:nth-child(3)")).getText();
+                }
+                az = Alphabet(zoneName, zoneCol);
+                Assert.assertTrue(az==1);
+
+                wd.get("http://localhost:8080/litecart/admin/?app=countries&doc=countries");
+            }
+        }
+
+        wd.get("http://localhost:8080/litecart/admin/?app=geo_zones&doc=geo_zones");
+
+        geoZoneRows = wd.findElements(By.cssSelector("[name=geo_zones_form] .row"));
+        geoZoneCol = geoZoneRows.size();
+
+        for (int i = 0; i< geoZoneCol; i++) {
+            geoZoneRows = wd.findElements(By.cssSelector("[name=geo_zones_form] .row"));
+            geoZoneRow = geoZoneRows.get(i);
+            geoZoneRow.findElement(By.cssSelector("a")).click();
+            wait = new WebDriverWait(wd,10);
+
+            zoneRows = wd.findElements(By.cssSelector("[id=table-zones] tr"));
+            zoneCol = zoneRows.size() - 2;
+            zoneName = new String[zoneCol];
+
+            for (int j = 1; j<= zoneCol; j++) {
+                zoneRow=zoneRows.get(j);
+                zoneName[j-1] = zoneRow.findElement(
+                        By.cssSelector("[id=table-zones] tr td:nth-child(3) [selected=selected]")).
+                        getAttribute("textContent");
+            }
+            az = Alphabet(zoneName, zoneCol);
+            Assert.assertTrue(az==1);
+            wd.get("http://localhost:8080/litecart/admin/?app=geo_zones&doc=geo_zones");
         }
     }
 
