@@ -58,15 +58,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Assert.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.14.2/51c9ea7dd538e0f048d4fddacf3aeaf4a0f689b3/testng-6.14.2-sources.jar!/org/testng/Assert.java">
+      <file leaf-file-name="CreateUser.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/tests/CreateUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding>
-                <element signature="e#2786#2787#0" expanded="true" />
-                <element signature="e#2829#2830#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,37 +71,14 @@
       <file leaf-file-name="HelperAdmin.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/appmanager/HelperAdmin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="36" column="57" lean-forward="true" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
+            <state relative-caret-position="-226">
+              <caret line="367" column="61" lean-forward="false" selection-start-line="367" selection-start-column="61" selection-end-line="367" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#907#908#0" expanded="true" />
-                <element signature="e#2874#2875#0" expanded="true" />
-                <marker date="1522740775806" expanded="true" signature="3437:3443" ph="{...}" />
+                <element signature="e#976#977#0" expanded="true" />
+                <element signature="e#2943#2944#0" expanded="true" />
+                <marker date="1522743045763" expanded="true" signature="3506:3512" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelperBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/appmanager/HelperBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding>
-                <element signature="e#403#404#0" expanded="true" />
-                <element signature="e#450#451#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductPage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/tests/ProductPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -516,6 +490,7 @@
         <option value="$PROJECT_DIR$/src/test/java/tests/Stikers.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/ProductPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/appmanager/HelperAdmin.java" />
+        <option value="$PROJECT_DIR$/src/test/java/tests/CreateUser.java" />
       </list>
     </option>
   </component>
@@ -623,11 +598,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ProductPage">
-    <configuration name="ClickMenu" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CreateUser">
+    <configuration name="CreateUser" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="testAdmin.*" />
+          <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -636,7 +611,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.ClickMenu" />
+      <option name="MAIN_CLASS_NAME" value="tests.CreateUser" />
       <option name="METHOD_NAME" />
       <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -1044,19 +1019,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.ClickMenu" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.LeftMenuClick" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.Stikers" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.GeoZone" />
-      <item index="4" class="java.lang.String" itemvalue="TestNG.ProductPage" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.LeftMenuClick" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.Stikers" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.GeoZone" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.ProductPage" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.CreateUser" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="TestNG.ProductPage" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.GeoZone" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.Stikers" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.LeftMenuClick" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.ClickMenu" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.CreateUser" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.ProductPage" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.GeoZone" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.Stikers" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.LeftMenuClick" />
       </list>
     </recent_temporary>
   </component>
@@ -1077,11 +1052,11 @@
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="CreateUser - 2018.04.03 at 11h 10m 55s.xml">
+      <configuration name="CreateUser" configurationId="TestNG" />
+    </history-entry>
     <history-entry file="GeoZone - 2018.04.02 at 16h 37m 26s.xml">
       <configuration name="GeoZone" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LeftMenuClick_(1) - 2018.03.28 at 13h 59m 09s.xml">
-      <configuration name="LeftMenuClick (1)" configurationId="TestNG" />
     </history-entry>
     <history-entry file="LeftMenuClick_(1) - 2018.03.28 at 13h 59m 31s.xml">
       <configuration name="LeftMenuClick (1)" configurationId="TestNG" />
@@ -1109,7 +1084,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31238000" />
+    <option name="totallyTimeSpent" value="32823000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1921" y="0" width="1374" height="916" extended-state="0" />
@@ -1128,7 +1103,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2914764" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2914764" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948717" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1216,14 +1191,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/AdminTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/ClickAdmin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1238,9 +1205,9 @@
           <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-            <element signature="e#2874#2875#0" expanded="true" />
-            <marker date="1522740775806" expanded="true" signature="3437:3443" ph="{...}" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#2943#2944#0" expanded="true" />
+            <marker date="1522743045763" expanded="true" signature="3506:3512" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1526,17 +1493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/appmanager/HelperBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/GeoZone.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1556,23 +1512,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/appmanager/HelperAdmin.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/ProductPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="36" column="57" lean-forward="true" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
+        <state relative-caret-position="153">
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/appmanager/HelperBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#907#908#0" expanded="true" />
-            <element signature="e#2874#2875#0" expanded="true" />
-            <marker date="1522740775806" expanded="true" signature="3437:3443" ph="{...}" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/tests/ProductPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/appmanager/HelperAdmin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="-226">
+          <caret line="367" column="61" lean-forward="false" selection-start-line="367" selection-start-column="61" selection-end-line="367" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+            <element signature="e#2943#2944#0" expanded="true" />
+            <marker date="1522743045763" expanded="true" signature="3506:3512" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/tests/CreateUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>

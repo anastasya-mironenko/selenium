@@ -3,9 +3,11 @@ package appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.util.Date;
 import java.util.List;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
@@ -347,5 +349,54 @@ public class HelperAdmin extends HelperBase {
         } else {
             return "не совпадает";
         }
+    }
+
+    public void NewCreateUser(){
+        wd.findElement(By.linkText("New customers click here")).click();
+        //Form
+        wd.findElement(By.cssSelector("input[name='firstname']")).sendKeys("Ivan");
+        wd.findElement(By.cssSelector("input[name='lastname']")).sendKeys("Petrov");
+        wd.findElement(By.cssSelector("input[name='address1']")).sendKeys("WWW");
+        wd.findElement(By.cssSelector("input[name='postcode']")).sendKeys("12345");
+        wd.findElement(By.cssSelector("input[name='city")).sendKeys("Moscow");
+
+        //Zone
+        fillSelect("select[name='country_code']", "United States");
+        fillSelect("select[name='zone_code']", "Alaska");
+
+        //Unique email
+        String email = generateUniqueNumber() + "@gmail.com";
+        wd.findElement(By.cssSelector("input[name='email']")).sendKeys(email);
+        wd.findElement(By.cssSelector("input[name='phone']")).sendKeys("+71234567890");
+        wd.findElement(By.cssSelector("input[name='password']")).sendKeys("password");
+        wd.findElement(By.cssSelector("input[name='confirmed_password']")).sendKeys("password");
+        wd.findElement(By.cssSelector("button[name='create_account']")).click();
+
+        //Logout
+        wd.findElement(By.linkText("Logout")).click();
+
+        //Login
+
+        wd.findElement(By.cssSelector("input[name='email']")).sendKeys(email);
+        wd.findElement(By.cssSelector("input[name='password']")).sendKeys("password");
+        wd.findElement(By.cssSelector("button[name='login']")).click();
+
+        //Logout
+
+        wd.findElement(By.linkText("Logout")).click();
+
+    }
+
+    public void fillSelect(String locator, String selectedItem){
+        WebElement selectElement = wd.findElement(By.cssSelector(locator));
+        Select select = new Select(selectElement);
+        List options = select.getOptions();
+        select.selectByVisibleText(selectedItem);
+    }
+
+    public String generateUniqueNumber(){
+        Date date = new Date();
+        long millis = date.getTime();
+        return String.valueOf(millis);
     }
 }
