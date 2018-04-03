@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
+import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 public class HelperAdmin extends HelperBase {
     int menuCol, submenuCol;
@@ -27,6 +27,13 @@ public class HelperAdmin extends HelperBase {
     List<WebElement> countryRows, zoneRows, geoZoneRows;  // список стран, список зон
     String[] countryName, zoneName;  // имена стран, имена зон
 
+    //
+
+    List<WebElement> productList;
+    WebElement productUnit, Cart, productTable;
+    int i, j, k, k1, p;
+    String[] productName;
+    //
 
     public HelperAdmin(WebDriver wd) {
         super(wd);
@@ -89,13 +96,13 @@ public class HelperAdmin extends HelperBase {
 
         wait = new WebDriverWait(wd, 10);
 
-        prodList = wd.findElements(By.id("li.product"));
-        prodCol = prodList.size();
+        productList = wd.findElements(By.id("li.product"));
+        prodCol = productList.size();
 
         for (int i = 0; i < prodCol; i++) {
 
-            prodList = wd.findElements(By.id("li.product"));
-            prodUnit = prodList.get(i);
+            productList = wd.findElements(By.id("li.product"));
+            prodUnit = productList.get(i);
 
             stickerList = wd.findElements(By.cssSelector("li.product .sticker"));
             stickerCol = stickerList.size();
@@ -492,5 +499,76 @@ public class HelperAdmin extends HelperBase {
         } else {
             System.out.println("Файл " + file.getAbsolutePath() + " не существует");
         }
+    }
+
+    public void UpdateBasket(){
+        productName = new String[3];
+
+        for (i = 0; i < 3; i++) {
+            wd.get("http://localhost:8080/litecart/en/");
+            wait = new WebDriverWait(wd, 10);
+            wait.until(titleContains("Online Store"));
+
+            productList = wd.findElements(By.cssSelector("li.product"));
+
+            p = 1; j = 0;
+            while(p > 0) {
+                k = 1; k1 = 1;
+                productUnit = productList.get(j);
+                productName[i]=productUnit.findElement(By.cssSelector("div.name")).getText();
+
+                if(i==1) {
+                    k = productName[i].compareToIgnoreCase(productName[i-1]);
+                }
+
+                if (i==2) {
+                    k = productName[i].compareToIgnoreCase(productName[i-1]);
+                    k1= productName[i].compareToIgnoreCase(productName[i-2]);
+                }
+
+                if((k==0)||(k1==0)) { j++; }
+                else { p = 0; }
+            }
+
+            productUnit.click();
+            wait = new WebDriverWait(wd, 10);
+            wait.until(titleContains(productName[i]));
+
+            wait = new WebDriverWait(wd, 10);
+            Cart = wait.until(presenceOfElementLocated(By.id("cart")));
+            k = productName[i].compareToIgnoreCase("Yellow Duck");
+            if (k==0) {
+                new Select(wd.findElement(By.name("options[Size]"))).selectByVisibleText("Medium +$2.50");
+            }
+
+            wd.findElement(By.name("add_cart_product")).click();
+
+            wait = new WebDriverWait(wd, 10);
+            wait.until(textToBePresentInElement(
+                    Cart.findElement(By.cssSelector("span.quantity")),
+                    Integer.toString(i+1)));
+        }
+
+        wd.get("http://localhost:8080/litecart/en/");
+
+        wd.findElement(By.id("cart")).click();
+        wait = new WebDriverWait(wd, 10);
+        wait.until(titleContains("Checkout"));
+
+        for(int n = 1; n <= 3; n++) {
+            productTable = wait.until(presenceOfElementLocated(By.id("order_confirmation-wrapper")));
+
+            productList = wd.findElements(By.cssSelector("li.shortcut"));
+            if(productList.size()>0) {  productList.get(0).click(); }
+
+            wd.findElement(By.name("remove_cart_item")).click();
+            wait = new WebDriverWait(wd, 10);
+            wait.until(stalenessOf(productTable));
+        }
+
+        wd.get("http://localhost:8080/litecart/en/");
+        wait = new WebDriverWait(wd, 10);
+        wait.until(titleContains("Online Store"));
+
     }
 }
