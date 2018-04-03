@@ -3,6 +3,7 @@ package appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -10,6 +11,7 @@ import org.testng.Assert;
 import java.io.File;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
@@ -570,5 +572,46 @@ public class HelperAdmin extends HelperBase {
         wait = new WebDriverWait(wd, 10);
         wait.until(titleContains("Online Store"));
 
+    }
+
+    public void CheckCountriesLinks() {
+
+        // Countries
+        wd.findElement(By.linkText("Countries")).click();
+        // New country
+        wd.findElement(By.cssSelector("a.button")).click();
+
+        List<WebElement> links = wd.findElements(By.cssSelector("i[class='fa fa-external-link']"));
+
+        // id window
+        String mainWindow = wd.getWindowHandle();
+
+        for (int i = 0; i < links.size(); i++) {
+
+            // id windows
+            Set<String> oldWindows = wd.getWindowHandles();
+
+            // link
+            links.get(i).click();
+
+            String newWindow = (new WebDriverWait(wd, 10))
+                    .until(new ExpectedCondition<String>() {
+                               public String apply(WebDriver wd) {
+                                   Set<String> newWindowsSet = wd.getWindowHandles();
+                                   newWindowsSet.removeAll(oldWindows);
+                                   return newWindowsSet.size() > 0 ?
+                                           newWindowsSet.iterator().next() : null;
+                               }
+                           }
+                    );
+
+            // new window
+            wd.switchTo().window(newWindow);
+            // close window
+            wd.close();
+
+            // return old window
+            wd.switchTo().window(mainWindow);
+        }
     }
 }
