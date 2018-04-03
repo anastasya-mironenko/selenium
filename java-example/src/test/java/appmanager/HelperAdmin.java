@@ -7,8 +7,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.io.File;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
@@ -398,5 +400,97 @@ public class HelperAdmin extends HelperBase {
         Date date = new Date();
         long millis = date.getTime();
         return String.valueOf(millis);
+    }
+
+    public void CreateNewProduct(){
+
+        wd.findElement(By.linkText("Catalog")).click();
+        wd.findElement(By.linkText("Add New Product")).click();
+
+        // General
+        wd.findElement(By.cssSelector("label input[value='1']")).click(); // Enabled
+        fillInput("input[name='name[en]']","Unique Duck"); //  Name
+        fillInput("input[name='code']", "ud001"); //  Cod Product
+        putCheckbox("input[name='categories[]'][data-name='Root']"); //  check-box Root
+        fullSelect("select[name='default_category_id']", "Root"); // Root
+        putCheckbox("input[name='product_groups[]'][value='1-3']");//  check-box Unisex
+        fillInput("input[name='quantity']", "10");
+        fullSelect("select[name='quantity_unit_id']", "pcs");
+        fullSelect("select[name='delivery_status_id']", "3-5 days");
+        fullSelect("select[name='sold_out_status_id']", "Sold out");
+        attachFile("input[name='new_images[]']", "img\\duck-u.jpg");
+        // Date
+        wd.findElement(By.cssSelector("input[name='date_valid_from']")).sendKeys("2018-04-03");
+        wd.findElement(By.cssSelector("input[name='date_valid_to']")).sendKeys("2018-04-29");
+
+        //Information
+        wd.findElement(By.linkText("Information")).click();
+        pause(2000);
+        fullSelect("select[name='manufacturer_id']", "ACME Corp.");
+        fillInput("input[name='short_description[en]']", "Unique Duck for You. With Love.");
+        fillTextarea("textarea[name='description[en]']");
+
+
+        //Prices
+        wd.findElement(By.linkText("Prices")).click();
+        pause(2000);
+        fillInput("input[name='purchase_price']", "1");
+        fullSelect("select[name='purchase_price_currency_code']", "US Dollars");
+        fillInput("input[name='prices[USD]']", "1");
+
+        // Save
+        wd.findElement(By.cssSelector("button[name='save']")).click();
+
+        // Search Product
+        wd.findElement(By.linkText("Unique Duck")).click();
+
+    }
+
+    public void putCheckbox(String locator) {
+        WebElement checkbox = wd.findElement(By.cssSelector(locator));
+        if (checkbox.isSelected()) {
+            return;
+        } else {
+            checkbox.click();
+        }
+    }
+
+    public void fillInput(String locator, String text) {
+        WebElement element = wd.findElement(By.cssSelector(locator));
+        element.clear();
+        element.sendKeys(text);
+
+    }
+
+    public void fullSelect(String locator, String selectedItem) {
+        WebElement selectElement = wd.findElement(By.cssSelector(locator));
+        Select select = new Select(selectElement);
+        select.selectByVisibleText(selectedItem);
+    }
+
+
+    public void pause(Integer milliseconds) {
+        try {
+            TimeUnit.MILLISECONDS.sleep(milliseconds);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void fillTextarea(String locator) {
+        WebElement element = wd.findElement(By.cssSelector(locator));
+        element.clear();
+        String text = "Unique Duck - for You. The Best of ducks. With B))";
+        element.sendKeys(text);
+    }
+
+    public void attachFile(String locator, String fileName) {
+        File file = new File(fileName);
+        if (file.exists()) {
+            wd.findElement(By.cssSelector(locator)).sendKeys(file.getAbsolutePath());
+            System.out.println("Файл " + file.getAbsolutePath() + " прикреплен");
+        } else {
+            System.out.println("Файл " + file.getAbsolutePath() + " не существует");
+        }
     }
 }
