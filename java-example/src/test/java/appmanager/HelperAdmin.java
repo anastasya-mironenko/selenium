@@ -23,13 +23,14 @@ public class HelperAdmin extends HelperBase {
     List<WebElement> countryRows, zoneRows, geoZoneRows;  // список стран, список зон
     String[] countryName, zoneName;  // имена стран, имена зон
 
-    public HelperAdmin(WebDriver wd){
+
+    public HelperAdmin(WebDriver wd) {
         super(wd);
     }
 
     private WebDriverWait wait;
 
-    public void goToAdmin(){
+    public void goToAdmin() {
         wd.get("http://localhost:8080/litecart/admin/login.php?redirect_url=%2Flitecart%2Fadmin%2F");
     }
 
@@ -76,13 +77,13 @@ public class HelperAdmin extends HelperBase {
         }
     }
 
-    public void goToSite(){
+    public void goToSite() {
         wd.get("http://localhost:8080/litecart/en/");
     }
 
-    public void CheckStiker(){
+    public void CheckStiker() {
 
-        wait = new WebDriverWait(wd,10);
+        wait = new WebDriverWait(wd, 10);
 
         prodList = wd.findElements(By.id("li.product"));
         prodCol = prodList.size();
@@ -98,12 +99,12 @@ public class HelperAdmin extends HelperBase {
         }
     }
 
-    public static int Alphabet (String[] testArr, int arrSize) {
-        int isAlphab=1;
-        for (int i=1; i<arrSize;i++) {
+    public static int Alphabet(String[] testArr, int arrSize) {
+        int isAlphab = 1;
+        for (int i = 1; i < arrSize; i++) {
             int k;
-            k=testArr[i-1].compareToIgnoreCase(testArr[i]);
-            if(k>=0) isAlphab=-1;
+            k = testArr[i - 1].compareToIgnoreCase(testArr[i]);
+            if (k >= 0) isAlphab = -1;
         }
         return isAlphab;
     }
@@ -118,33 +119,33 @@ public class HelperAdmin extends HelperBase {
         countryName = new String[countryCol];
         zones = new int[countryCol];
 
-        for (int i = 0; i< countryCol; i++) {
+        for (int i = 0; i < countryCol; i++) {
             countryRow = countryRows.get(i);
             countryName[i] = countryRow.findElement(By.cssSelector("a")).getText();
-            zones[i]=Integer.parseInt(countryRow.findElement(By.cssSelector("td:nth-child(6)")).getText());
+            zones[i] = Integer.parseInt(countryRow.findElement(By.cssSelector("td:nth-child(6)")).getText());
         }
 
         a = Alphabet(countryName, countryCol);
 
-        Assert.assertTrue(a==1);
+        Assert.assertTrue(a == 1);
 
-        for (int i = 0; i< countryCol; i++) {
-            if (zones[i]>0) {
+        for (int i = 0; i < countryCol; i++) {
+            if (zones[i] > 0) {
                 countryRows = wd.findElements(By.cssSelector("[name=countries_form] .row"));
-                countryRow=countryRows.get(i);
+                countryRow = countryRows.get(i);
                 countryRow.findElement(By.cssSelector("a")).click();
-                wait = new WebDriverWait(wd,10);
+                wait = new WebDriverWait(wd, 10);
 
                 zoneRows = wd.findElements(By.cssSelector("[id=table-zones] tr"));
                 zoneCol = zoneRows.size() - 2;
                 zoneName = new String[zoneCol];
 
-                for (int j = 1; j<= zoneCol; j++) {
+                for (int j = 1; j <= zoneCol; j++) {
                     zoneRow = zoneRows.get(j);
-                    zoneName[j-1]=zoneRow.findElement(By.cssSelector("td:nth-child(3)")).getText();
+                    zoneName[j - 1] = zoneRow.findElement(By.cssSelector("td:nth-child(3)")).getText();
                 }
                 az = Alphabet(zoneName, zoneCol);
-                Assert.assertTrue(az==1);
+                Assert.assertTrue(az == 1);
 
                 wd.get("http://localhost:8080/litecart/admin/?app=countries&doc=countries");
             }
@@ -155,26 +156,196 @@ public class HelperAdmin extends HelperBase {
         geoZoneRows = wd.findElements(By.cssSelector("[name=geo_zones_form] .row"));
         geoZoneCol = geoZoneRows.size();
 
-        for (int i = 0; i< geoZoneCol; i++) {
+        for (int i = 0; i < geoZoneCol; i++) {
             geoZoneRows = wd.findElements(By.cssSelector("[name=geo_zones_form] .row"));
             geoZoneRow = geoZoneRows.get(i);
             geoZoneRow.findElement(By.cssSelector("a")).click();
-            wait = new WebDriverWait(wd,10);
+            wait = new WebDriverWait(wd, 10);
 
             zoneRows = wd.findElements(By.cssSelector("[id=table-zones] tr"));
             zoneCol = zoneRows.size() - 2;
             zoneName = new String[zoneCol];
 
-            for (int j = 1; j<= zoneCol; j++) {
-                zoneRow=zoneRows.get(j);
-                zoneName[j-1] = zoneRow.findElement(
+            for (int j = 1; j <= zoneCol; j++) {
+                zoneRow = zoneRows.get(j);
+                zoneName[j - 1] = zoneRow.findElement(
                         By.cssSelector("[id=table-zones] tr td:nth-child(3) [selected=selected]")).
                         getAttribute("textContent");
             }
             az = Alphabet(zoneName, zoneCol);
-            Assert.assertTrue(az==1);
+            Assert.assertTrue(az == 1);
             wd.get("http://localhost:8080/litecart/admin/?app=geo_zones&doc=geo_zones");
         }
     }
 
+    public class ProductData {
+        public String name;
+        public String regularPrice;
+        public String campaignPrice;
+        boolean isCrossedRegularPrice;
+        boolean isGrayColorRegularPrice;
+        boolean isBoldСampaignPrice;
+        boolean isRedColorСampaignPrice;
+        boolean isTextSizeСampaignPriceBigger;
+    }
+
+    public void CheckProductPage() {
+
+        ProductData dataFromMainPage = new ProductData();
+        ProductData dataFromProductPage = new ProductData();
+
+        dataFromMainPage = makeProductFormCurrentPage(
+                "#box-campaigns div.name",
+                "#box-campaigns div.price-wrapper .regular-price",
+                "#box-campaigns div.price-wrapper .campaign-price");
+
+        wd.findElement(By.cssSelector("#box-campaigns img")).click();
+        dataFromProductPage = makeProductFormCurrentPage(
+                "#box-product h1",
+                ".information .regular-price",
+                ".information .campaign-price");
+
+        compareProductData(dataFromMainPage, dataFromProductPage);
+    }
+
+    public int[] getRGB(String color) {
+
+        int[] rgb = new int[3];
+
+        int bracketOpen = color.indexOf('(');
+        int bracketClose = color.indexOf(')');
+
+        color = color.substring(bracketOpen + 1, bracketClose);
+
+        int comma1 = color.indexOf(',');
+        String element = color.substring(0, comma1);
+        rgb[0] = Integer.parseInt(element);
+        color = color.substring(comma1 + 2, color.length());
+
+        int comma2 = color.indexOf(',');
+        element = color.substring(0, comma2);
+        rgb[1] = Integer.parseInt(element);
+        color = color.substring(comma2 + 2, color.length());
+
+        int comma3 = color.indexOf(',');
+        if (comma3 != -1) {
+            element = color.substring(0, comma3);
+            rgb[2] = Integer.parseInt(element);
+        } else {
+            element = color;
+            rgb[2] = Integer.parseInt(element);
+        }
+
+        return rgb;
+    }
+
+    public double getTextSize(String textSize) {
+        String cut = textSize.substring(0, textSize.length() - 2);
+        double size = Double.parseDouble(cut);
+        return size;
+    }
+
+    public ProductData makeProductFormCurrentPage(String nameSelector,
+                                                  String regularPriceSelector,
+                                                  String campaignPriceSelector) {
+
+        ProductData productData = new ProductData();
+
+        productData.name = wd.findElement(By.cssSelector(nameSelector))
+                .getAttribute("textContent");
+        productData.regularPrice = wd.findElement(By.cssSelector(regularPriceSelector))
+                .getAttribute("textContent");
+        productData.campaignPrice = wd.findElement(By.cssSelector(campaignPriceSelector))
+                .getAttribute("textContent");
+
+
+        String textDecorationLineRP = wd.findElement(By.cssSelector(regularPriceSelector))
+                .getCssValue("text-decoration-line");
+        if (textDecorationLineRP.equals("line-through")) {
+            productData.isCrossedRegularPrice = true;
+        } else {
+            productData.isCrossedRegularPrice = false;
+        }
+
+        String textColorRegularPrice = wd.findElement(By.cssSelector(regularPriceSelector))
+                .getCssValue("color");
+        int[] textColorRP = getRGB(textColorRegularPrice);
+        if (textColorRP[0] == textColorRP[1] && textColorRP[0] == textColorRP[2]) {
+            productData.isGrayColorRegularPrice = true;
+        } else {
+            productData.isGrayColorRegularPrice = false;
+        }
+
+
+        String textDecorationСP = wd.findElement(By.cssSelector(campaignPriceSelector))
+                .getCssValue("font-weight");
+        int textDecoration = Integer.parseInt(textDecorationСP);
+        if (textDecoration >= 700) {
+            productData.isBoldСampaignPrice = true;
+        } else {
+            productData.isBoldСampaignPrice = false;
+        }
+
+
+        String textColorСampaignPrice = wd.findElement(By.cssSelector(campaignPriceSelector))
+                .getCssValue("color");
+        int[] textColorCP = getRGB(textColorСampaignPrice);
+        if (textColorCP[1] == 0 && textColorCP[2] == 0) {
+            productData.isRedColorСampaignPrice = true;
+        } else {
+            productData.isRedColorСampaignPrice = false;
+        }
+
+        String textSizeRegularPrice = wd.findElement(By.cssSelector(regularPriceSelector))
+                .getCssValue("font-size");
+        String textSizeСampaignPrice = wd.findElement(By.cssSelector(campaignPriceSelector))
+                .getCssValue("font-size");
+
+        double textSizeRP = getTextSize(textSizeRegularPrice);
+        double textSizeCP = getTextSize(textSizeСampaignPrice);
+        if (textSizeCP > textSizeRP) {
+            productData.isTextSizeСampaignPriceBigger = true;
+        } else {
+            productData.isTextSizeСampaignPriceBigger = false;
+        }
+
+        return productData;
+    }
+
+    public void compareProductData(ProductData mainPage, ProductData productPage) {
+        // Выводим результат сравнения на консоль
+        System.out.println("На главной странице и на странице товара:");
+        System.out.println(compareStringData(mainPage.name, productPage.name)
+                + " название товара");
+        System.out.println(compareStringData(mainPage.regularPrice, productPage.regularPrice)
+                + " обычная цена");
+        System.out.println(compareStringData(mainPage.campaignPrice, productPage.campaignPrice)
+                + " акционная цена");
+        System.out.println(compareBooleanData(mainPage.isCrossedRegularPrice, productPage.isCrossedRegularPrice)
+                + " стиль обычной цены - зачеркнутый");
+        System.out.println(compareBooleanData(mainPage.isGrayColorRegularPrice, productPage.isGrayColorRegularPrice)
+                + " цвет текста обычной цены - серый");
+        System.out.println(compareBooleanData(mainPage.isBoldСampaignPrice, productPage.isBoldСampaignPrice)
+                + " стиль акционной цены - полужирный");
+        System.out.println(compareBooleanData(mainPage.isRedColorСampaignPrice, productPage.isRedColorСampaignPrice)
+                + " цвет текста акционной цены - красный");
+        System.out.println(compareBooleanData(mainPage.isTextSizeСampaignPriceBigger, productPage.isTextSizeСampaignPriceBigger)
+                + " шрифт текста цен: акционная цена крупнее, чем обычная");
+    }
+
+    public String compareStringData(String mainPage, String productPage) {
+        if (mainPage.equals(productPage)) {
+            return "совпадает";
+        } else {
+            return "не совпадает";
+        }
+    }
+
+    public String compareBooleanData(boolean mainPage, boolean productPage) {
+        if (mainPage == productPage) {
+            return "совпадает";
+        } else {
+            return "не совпадает";
+        }
+    }
 }
