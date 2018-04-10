@@ -507,74 +507,42 @@ public class HelperAdmin extends HelperBase {
     }
 
     public void UpdateBasket(){
-    //    productName = new String[3];
 
         for (i = 0; i < 3; i++) {
-            wd.get("http://localhost:8080/litecart/en/");
-            wait = new WebDriverWait(wd, 10);
-            wait.until(titleContains("Online Store"));
+            goToProductSite();
+            addProduct();
+        }
+        goToSite();
+        removeProduct();
+    }
 
-            //      productList = wd.findElements(By.cssSelector("li.product"));
+    public void goToProductSite(){
+        wd.get("http://localhost:8080/litecart/en/");
+        wait = new WebDriverWait(wd, 10);
+        wait.until(titleContains("Online Store"));
+    }
 
-            wd.findElement(By.cssSelector("div.image-wrapper img")).click();
+    public void addProduct(){
+        wd.findElement(By.cssSelector("div.image-wrapper img")).click();
 
-            // текущее количество товаров в корзине
-            int currentQuantity = getIntFromTextContent(By.cssSelector("div#cart .quantity"));
+        // текущее количество товаров в корзине
+        int currentQuantity = getIntFromTextContent(By.cssSelector("div#cart .quantity"));
 
-            boolean size = isElementPresent("select[name='options[Size]']");
-            if (size) {
-                WebElement selectElement = wd.findElement(By.cssSelector("select[name='options[Size]'"));
-                Select select = new Select(selectElement);
-                select.selectByVisibleText("Small");
-            }
-
-            wd.findElement(By.cssSelector("button[name='add_cart_product']")).click();
-
-            (new WebDriverWait(wd, 5)).until(ExpectedConditions
-                    .textToBePresentInElement(By.cssSelector("div#cart .quantity"),
-                            Integer.toString(currentQuantity + 1)));
+        boolean size = isElementPresent("select[name='options[Size]']");
+        if (size) {
+            WebElement selectElement = wd.findElement(By.cssSelector("select[name='options[Size]'"));
+            Select select = new Select(selectElement);
+            select.selectByVisibleText("Small");
         }
 
-           /* p = 1; j = 0;
-            while(p > 0) {
-                k = 1; k1 = 1;
-                productUnit = productList.get(j);
-                productName[i]=productUnit.findElement(By.cssSelector("div.name")).getText();
+        wd.findElement(By.cssSelector("button[name='add_cart_product']")).click();
 
-                if(i==1) {
-                    k = productName[i].compareToIgnoreCase(productName[i-1]);
-                }
+        (new WebDriverWait(wd, 5)).until(ExpectedConditions
+                .textToBePresentInElement(By.cssSelector("div#cart .quantity"),
+                        Integer.toString(currentQuantity + 1)));
+    }
 
-                if (i==2) {
-                    k = productName[i].compareToIgnoreCase(productName[i-1]);
-                    k1= productName[i].compareToIgnoreCase(productName[i-2]);
-                }
-
-                if((k==0)||(k1==0)) { j++; }
-                else { p = 0; }
-            }
-
-            productUnit.click();
-            wait = new WebDriverWait(wd, 10);
-            wait.until(visibilityOfElementLocated(By.name("add_cart_product")));
-
-            wait = new WebDriverWait(wd, 10);
-            Cart = wait.until(presenceOfElementLocated(By.id("cart")));
-            k = productName[i].compareToIgnoreCase("Yellow Duck");
-            if (k==0) {
-                new Select(wd.findElement(By.name("options[Size]"))).selectByVisibleText("Medium +$2.50");
-            }
-
-            wd.findElement(By.name("add_cart_product")).click();
-
-            wait = new WebDriverWait(wd, 10);
-            wait.until(textToBePresentInElement(
-                    Cart.findElement(By.cssSelector("span.quantity")),
-                    Integer.toString(i+1)));
-        }*/
-
-        wd.get("http://localhost:8080/litecart/en/");
-
+    public void removeProduct(){
         wd.findElement(By.id("cart")).click();
         wait = new WebDriverWait(wd, 10);
         wait.until(titleContains("Checkout"));
@@ -589,11 +557,7 @@ public class HelperAdmin extends HelperBase {
             wait = new WebDriverWait(wd, 10);
             wait.until(stalenessOf(productTable));
         }
-
-        wd.get("http://localhost:8080/litecart/en/");
-        wait = new WebDriverWait(wd, 10);
-        wait.until(titleContains("Online Store"));
-
+        goToProductSite();
     }
 
     public int getIntFromTextContent(By locator) {
