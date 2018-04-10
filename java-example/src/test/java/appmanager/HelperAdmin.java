@@ -3,6 +3,7 @@ package appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.logging.LogEntry;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -10,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Set;
@@ -649,6 +651,54 @@ public class HelperAdmin extends HelperBase {
 
             // return old window
             wd.switchTo().window(mainWindow);
+        }
+    }
+
+    public void goToCatalog(){
+        wd.get(" http://localhost:8080/litecart/admin/?app=catalog&doc=catalog&category_id=1");
+    }
+
+    public void clickCatalogWithLogs(){
+
+        openAllSubCatalog();
+
+        // все ссылки товаров
+        List<WebElement> links = wd.findElements(By.cssSelector("tr.row img ~a"));
+        ArrayList<String> textLinks = new ArrayList<>();
+        // заполняем новый массив
+        getTextContentFromLinks(links, textLinks);
+
+        // пробегаемся по ссылкам и проверяем логи
+        for (int i = 0; i < textLinks.size(); i++) {
+            wd.findElement(By.linkText(textLinks.get(i))).click(); // нажимаем на ссылку
+            wd.navigate().back(); // возвращаемся назад
+
+            // логи браузера
+            List<LogEntry> logs = wd.manage().logs().get("browser").getAll();
+            if (logs.size() > 0) { // если есть запись, то выводим ее на консоль
+                System.out.println("При нажатии на ссылку " + textLinks.get(i)
+                        + " в логе браузера появилось сообщение:");
+                System.out.println(logs);
+            }
+        }
+    }
+
+    public void openAllSubCatalog() {
+        List<WebElement> closedFolders;
+        // находим нераскрытые папки на странице
+        closedFolders = wd.findElements(By.cssSelector("i[class='fa fa-folder']"));
+        if (closedFolders.size() > 0) {
+            do {
+                wd.findElement(By.cssSelector("i[class='fa fa-folder'] ~ a")).click();
+                closedFolders = wd.findElements(By.cssSelector("i[class='fa fa-folder']"));
+            } while (closedFolders.size() != 0);
+        }
+    }
+
+    public void getTextContentFromLinks(List<WebElement> links, ArrayList textLinks) {
+        for (int i = 0; i < links.size(); i++) {
+            String a = links.get(i).getAttribute("textContent");
+            textLinks.add(a);
         }
     }
 }
